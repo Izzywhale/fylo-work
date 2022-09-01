@@ -12,8 +12,15 @@
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,700;1,500&display=swap');
 
   :root {
+    /*Primary Colors*/
     --Very_Dark_Blue: hsl(243, 87%, 12%);
     --Desaturated_Blue: hsl(238, 22%, 44%);
+
+    /* Accent Colors */
+    --Bright_Blue: hsl(224, 93%, 58%);
+    --Moderate_Cyan: hsl(170, 45%, 43%);
+
+    /* Neutral Colors */
     --Light_Grayish_Blue: hsl(240, 75%, 98%);
     --Light_Gray: hsl(0, 0%, 75%);
   }
@@ -28,6 +35,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    align-items: center;
     /* margin: 20px; */
 }
 
@@ -105,9 +113,9 @@ main {
     padding: 10px 20px;
     margin: 8px; 
     display: inline-block;
-    background-color: blue;
+    background-color: var(--Very_Dark_Blue);
     /* box-sizing: border-box; */
-    border: 1px solid blue;
+    border: 1px solid var(--Very_Dark_Blue);
 }
 
 .left {
@@ -148,7 +156,7 @@ display:none;
 a.fylo {
     margin-left: 20px;
     display: inline;
-    color: rgb(27, 27, 212);
+    color: var(--Moderate_Cyan);
     text-decoration: underline;
 }
 
@@ -200,49 +208,64 @@ a.fylo {
     font-size: 12px;
     font-family: 'Raleway', sans-serif;
     color: var(--Light_Grayish_Blue);
+    padding-bottom: 20px;
 }
 
-.day {
-    width: 80%;
-}
 
 .free {
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 
 footer {
-    background-color: rgb(41, 41, 58);
-    margin-left: auto;
+    background-color: var(--Very_Dark_Blue);
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family:'Open Sans', sans-serif;
+    justify-content: space-evenly;
+    /* margin-left: auto;
     margin-right: auto;
     width: 80%;
     display: flex;
-    justify-content: space-evenly;
-    padding: 30px 0px;
+    
+    padding: 30px 0px; */
 }
 
 .contact {
     /* margin-left: 40px; */
-    display: block;
+    display: flex;
+    justify-content: flex start;
+    gap: 15px;
 }
 
-.ma {
-    margin-top: 10px;
-}
 
 .ta {
-    display: block;
-    margin-left: 20px;
-    color: white;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
 }
 
 .bian {
     display: flex;
-    margin-bottom: 40px;
+    flex-direction: column;
+    gap: 15px;
+    /* margin-bottom: 40px; */
+}
+
+.base {
+    color: var(--Light_Gray);
+}
+
+.ham {
+    color: var(--Light_Gray);
 }
 
 .downlogo {
-    margin-top: 20px;
-    margin-left: 40px;
+    /* margin-top: 20px;
+    margin-left: 40px; */
+    height:25px;
+    width: 80px;
+    color: var(--Light_Gray);
 }
 
 .job {
@@ -258,8 +281,8 @@ a {
 }
 
 .collate {
-    width: 20%;
-    height: 15%;
+    /* width: 20%;
+    height: 15%; */
 }
 
 .twitter {
@@ -326,7 +349,7 @@ button:hover {
         margin-right: auto; */
     }
     .job, .ig, .collate {
-        width: 48%;
+        /* width: 48%; */
     }
     .bian {
         margin-top: 30px;
@@ -337,10 +360,10 @@ button:hover {
         margin-top: 100px;
     }
    .collate {
-       margin-left: 20px;
+       /* margin-left: 20px; */
    }
    footer {
-       text-align: center;
+       /* text-align: center; */
    }
    .muse {
        margin-top: 20px;
@@ -395,29 +418,31 @@ button:hover {
         display: contents;
     }
 
-    .mobileinput {
+    .mobileinput{
         font-size: 15px;
         padding: 10px 20px;
         margin: 8px; 
         display: inline-block;
-        border: 1px solid #ccc;
+        border: 1px solid var(--Desaturated_Blue);
         box-sizing: border-box;
         font-family: 'Open Sans', sans-serif;
         width: 90%;
+        border-radius: 5px;
     }
 
-    .mobilebutton {
+    .mobilebutton{
         font-size: 15px;
         padding: 10px 20px;
         width: 90%;
         margin: 8px; 
         display: inline-block;
-        background-color:  var(--Desaturated_Blue);
+        background-color:  var(--Bright_Blue);
         box-sizing: border-box;
-        border: 1px solid var(--Desaturated_Blue);
+        border: 1px solid var(--Bright_Blue);
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         color: white;
+        border-radius: 5px;
     }
 
     .ad{
@@ -426,7 +451,7 @@ button:hover {
         line-height: 26px;
         font-weight: 400;
         padding-bottom: 30px;
-        color: var(--Desaturated_Blue);
+        color: var(--Very_Dark_Blue);
     }
 
     .desktoptextbox {
@@ -445,7 +470,7 @@ button:hover {
     }
 
     h2 {
-        font-size: 16px;
+        font-size: 14px;
         text-align: center;
         line-height: 26px;
         color: var(--Very_Dark_Blue);
@@ -474,6 +499,7 @@ button:hover {
     }
     h5{
         font-weight: 700;
+        color: var(--Very_Dark_Blue);
     }
 
     .access {
@@ -487,7 +513,56 @@ button:hover {
     .early {
         font-family: 'Raleway', sans-serif;
         padding-bottom: 15px;
-        font-weight: 700;
+        font-weight: 400;
+    }
+
+    .mobileinput2 {
+        font-size: 12px;
+        padding: 8px 15px;
+        margin: 6px; 
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+        width: 90%;
+        
+    }
+
+    .mobilebutton2 {
+        font-size: 12px;
+        padding: 8px 15px;
+        width: 90%;
+        margin: 6px; 
+        display: inline-block;
+        background-color: var(--Bright_Blue);
+        box-sizing: border-box;
+        border: 1px solid var(--Bright_Blue);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: white;
+    }
+
+    footer {
+        display: block;
+        font-size: 12px;
+    }
+
+    .ig {
+        text-decoration: none;
+        /* margin-top: 50px; */
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .free {
+        /* margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        padding: 10px; */
+        /* display: block; */
+        /* flex-direction: column; */
     }
     
 
@@ -526,13 +601,7 @@ button:hover {
     }
 
     
-    .free {
-        margin-left: auto;
-        margin-right: auto;
-        width: 70%;
-        padding: 10px;
-        /* display: block; */
-        /* flex-direction: column; */
+    
     
     
     /* .get {
@@ -563,9 +632,7 @@ button:hover {
     .early {
         font-size: 16px;
     }
-    footer {
-        display: block;
-    }
+   
     .bian {
         margin: top 40px;
     }
